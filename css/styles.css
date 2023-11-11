@@ -45,6 +45,10 @@ table {
 /*___*/
 
 body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/imagenFondo.webp');
+    background-size:cover;
     background-color: beige;
 }
 
@@ -68,30 +72,35 @@ a {
     width: 700px;
 }
 .nav a {
-    color: aquamarine;
+    color: rgba(0, 157, 149, 1) !important;
+    font-family: "Futura" sans-serif;
 }
 
 .icons {
     display: flex;
+    transform: scale(.04);
+    align-items: baseline;
+    
 }
 
 .masterhead {
+    background-size: 1000px;
+    width: 1000px;
     height: 400px;
-    width: 800px;
     background-image: url('../assets/imagenFondo.webp');
 }
-
-@media (max-width: 480px) {
+/* 
+@media screen and (max-width: 480px) {
     .nav {
         background-color: fuchsia;
     }
 }
 
-@media (max-width: 768px) {
-    .nav {
+@media screen and (max-width: 768px) {
+    .nav a {
         display: none;
     }
     .nav .menu-toggle {
         display: block;
     }
-}
+} */
